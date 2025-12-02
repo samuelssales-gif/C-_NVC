@@ -1,0 +1,15 @@
+@model List<CadAlunoTorloni.Models.Frutas>
+
+<h1>Pagina de Frutas saborosas</h1>
+
+<h2>lista de Frutas</h2>
+
+@foreach( var Frutas in Model ){
+<p>
+id: @Frutas.Id <br>
+Nome: @Frutas.Nome <br>
+Cor: @Frutas.Cor <br>
+Categoria: @Frutas.Categoria <br>
+</p>
+}
+
