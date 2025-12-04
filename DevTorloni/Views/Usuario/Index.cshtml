@@ -1,0 +1,43 @@
+  <link rel="stylesheet" href="../css/cadastro.css">
+  <h1 class="visually-hidden">Tela de Cadastro - DevConnect</h1>
+
+    <main>
+        <div>
+            <!-- Formulário de Cadastro -->
+            <form id="formulario" class="estilo-formulario" autocomplete="on">
+                <img src="../images/DevConnect.svg" alt="Logotipo DevConnect" style="width: 100%;">
+
+                <div>
+                    <label for="nome">Nome e Sobrenome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div>
+                    <label for="usuario">Nome de Usuário:</label>
+                    <input type="text" name="usuario" id="usuario" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
+
+                <div>
+                    <label for="file" class="btn-upload">Fazer upload da imagem</label>
+                    <input type="file" name="imagem" id="file" accept="image/*" hidden>
+                </div>
+
+                <button type="submit" class="formulario-botao-azul">Cadastrar</button>
+            </form>
+
+            <!-- Seção de Redirecionamento -->
+            <section id="secao-cadastro" class="estilo-formulario">
+                <p>Já possui uma conta? <a href="../pages/index.html">Conectar-se</a></p>
+            </section>
+        </div>
+    </main>

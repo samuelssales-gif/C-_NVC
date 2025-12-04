@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+/* === VARIÁVEIS DE TEMA === */
+:root {
+    --cor-cinza: #CBD3D7;
+    --cor-branco: #E4E4E4;
+    --cor-marrom-claro: #C6C5B9;
+    --cor-verde: #62929E;
+    --cor-cinza-escuro: #546A7B;
+
+    --borda: 1px solid var(--cor-cinza);
+    --borda-arredondamento: 2px;
+
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+}
+
+
+/* SELETOR GLOBAL */
+
+* {
+    font-family: "Saira Condensed", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline-color: var(--cor-verde);
+}
+
+body {
+    background-color: var(--cor-branco);
+}
+
+h1 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/*formulario*/
+.estilo-formulario {
+    border: var(--borda);
+    width: 100%;
+    background-color: var(--cor-branco);
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    border: var(--borda);
+}
+
+.formulario-botao-azul {
+    background-color: var(--cor-verde);
+    border-radius: var(--borda-arredondamento);
+    border: none;
+    height: 35px;
+
+    color: var(--cor-branco);
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 600;
+}
+
+#campo-upload {
+    display: none;
+}
+
+#texto-upload {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    min-height: 35px;
+    padding: 5px;
+    background-color: var(--cor-verde);
+    color: var(--cor-branco);
+    text-align: center;
+    font-weight: 600;
+    border-radius: var(--borda-arredondamento);
+}
+
+/* cabeçalho */
+#cabecalho {
+    width: 100%;
+    height: 80px;
+    background-color: var(--cor-branco);
+    display: flex;
+    justify-content: center;
+    border-bottom: var(--borda);
+}
+
+#cabecalho > nav {
+    width: 85%;
+    max-width: 1440px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-mobile {
+    display: none;
+}
+
+.cabecalho-acoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cabecalho-acoes > a {
+    display: flex;
+    align-items: center;
+}
+
+.foto-perfil {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+/* RESPONSIVO */
+@media only screen and (max-width: 485px) {
+    #logo-mobile {
+        display: initial;
+    }
+
+    #logo-desktop {
+        display: none;
+    }
+}

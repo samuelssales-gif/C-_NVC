@@ -1,7 +1,48 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "DevConnect-login";
 }
+<link rel="stylesheet" href="~/css/login.css">
+ <h1>Tela principal login</h1>
+    <main>
+        <div>
+            <!--formulario-->
+            <form id="formulario" class="estilo-formulario">
+                <img src="../images/DevConnect.svg" alt="" style=" width: 100%;">
 
+                <div>
+                    <label for="">Nome de Usuario:</label>
+                    <input type="text" name="" id="">
+                </div>
+
+                <div>
+                    <label for="">Senha:</label>
+                    <input type="password" name="" id="">
+                </div>
+
+                <button type="submit" class="formulario-botao-azul">Entrar</button>
+
+                <p>ou</p>
+
+                <a href="#">Esquceu a senha</a>
+
+            </form>
+
+            <!--seção de cadastro-->
+            <section id="secao-cadastro" class="estilo-formulario">
+                <p>Não tenho conta. <a href="../pages/cadastro.html">Cadastre-se</a></p>
+            </section>
+
+            <p class="informacao-aplicativo">Obtenha o aplicativo.</p>
+
+            <!--Seção de inicialização-->
+            <section id="secao-intalacao">
+                <img src="../images/app-store.svg" alt="imagem informando para baixar na app store">
+
+                <img src="../images/google-play.svg" alt="imagem informando para baixar na app store">
+            </section>
+
+        </div>
+    </main>
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>

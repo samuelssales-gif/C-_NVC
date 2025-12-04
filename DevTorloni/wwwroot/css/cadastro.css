@@ -1,0 +1,112 @@
+
+/* MAIN */
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* FORMULÁRIO */
+#formulario {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    gap: 10px;
+}
+
+#formulario > div {
+    width: 100%;
+}
+
+#formulario > div > label {
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+#formulario > p {
+    text-transform: uppercase;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-marrom-claro);
+}
+
+#formulario > a,
+#secao-cadastro > p > a {
+    text-decoration: none;
+    color: var(--cor-cinza-escuro);
+    font-weight: 500;
+}
+
+/* SEÇÕES */
+#secao-cadastro {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#secao-instalacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#secao-instalacao img {
+    width: 133px;
+    height: 39px;
+}
+
+/* FORMULÁRIO ESTILO */
+.estilo-formulario {
+    width: 100%;
+    max-width: 340px;
+    padding: 15px;
+    border: var(--borda);
+    border-radius: 6px;
+    background-color: var(--cor-branco);
+}
+
+/* BOTÃO */
+.formulario-botao-azul {
+    width: 100%;
+    background-color: var(--cor-verde);
+    color: var(--cor-branco);
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: var(--borda-arredondamento);
+}
+
+.formulario-botao-azul:hover {
+    background-color: var(--cor-cinza-escuro);
+}
+
+/* TEXTO INFORMATIVO */
+.informacao-aplicativo {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro);
+    font-weight: 400;
+}
+
+/* UPLOAD */
+.btn-upload {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 35px;
+    width: 100%;
+}

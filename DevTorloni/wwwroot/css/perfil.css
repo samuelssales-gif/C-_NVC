@@ -1,0 +1,167 @@
+main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: var(--cor-cinza-claro);
+}
+
+/* Header */
+header {
+    
+    margin-bottom: 20px;
+    background-color: var(--cor-cinza);
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav img {
+    max-height: 40px;
+}
+
+.cabecalho-acoes a {
+    margin-left: 15px;
+}
+
+.cabecalho-acoes img.foto-perfil {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* Perfil */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--cor-cinza-escuro);
+    padding: 15px;
+    flex-wrap: wrap;
+
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.informacao-perfil h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: var(--cor-azul-escuro);
+}
+
+.informacao-perfil p {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.informacao-perfil h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: var(--cor-azul);
+}
+
+.buttons button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.editar {
+    background-color: var(--cor-azul);
+}
+
+.sair {
+    background-color: var(--cor-azul-escuro);
+}
+
+/* Publicações */
+#publicacao header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#publicacao header img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+#publicacao header p {
+    font-weight: bold;
+    color: var(--cor-azul-escuro);
+}
+
+/* Comentários */
+.comentarios {
+    border-top: 1px solid var(--cor-cinza);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    background-color: var(--cor-cinza);
+    padding: 10px;
+}
+
+.comentario .perfil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+   
+}
+
+.comentario .perfil img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.comentario .perfil .nome {
+    font-weight: bold;
+    color: var(--cor-azul-escuro);
+}
+
+.comentario .texto {
+    margin-left: 45px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.comentario .interacoes {
+    margin-left: 45px;
+}
+
+.comentario .interacoes button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.comentario .interacoes img {
+    width: 20px;
+    height: 20px;
+}

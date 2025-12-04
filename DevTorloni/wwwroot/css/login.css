@@ -1,0 +1,160 @@
+:root {
+    --cor-cinza: #CBD3D7;
+    --cor-branco: #E4E4E4;
+    --cor-marron-claro: #C6C5B9;
+    --cor-verde: #62929E;
+    --cor-cinza-escuro: #546A7B;
+
+    --borda: 1px solid var(--cor-cinza);
+    --borda-arredondamento: 4px;
+
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+}
+
+/* === LAYOUT PRINCIPAL === */
+main {
+    width: 100%;
+    min-height: 100vh;
+    /* Altura da janela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-cinza);
+}
+
+main>div {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 360px;
+}
+
+/* === FORMULÁRIO === */
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    gap: 15px;
+    width: 100%;
+}
+
+#formulario>div {
+    width: 100%;
+}
+
+#formulario>div>label {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro);
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.estilo-formulario {
+    border: var(--borda);
+    background-color: var(--cor-branco);
+    border-radius: var(--borda-arredondamento);
+    width: 100%;
+    max-width: 340px;
+    padding: 20px;
+}
+
+/* === INPUTS === */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+    width: 100%;
+    height: 35px;
+    padding: 6px 10px;
+    border: var(--borda);
+    border-radius: var(--borda-arredondamento);
+    background-color: var(--cor-cinza);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+/* === BOTÃO === */
+.formulario-botao-azul {
+    width: 100%;
+    background-color: var(--cor-verde);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: var(--borda-arredondamento);
+    font-size: var(--tamanho-fonte-md);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-botao-azul:hover {
+    background-color: var(--cor-cinza-escuro);
+}
+
+/* === LINKS E TEXTOS === */
+#formulario>a,
+#secao-cadastro>p>a {
+    text-decoration: none;
+    color: var(--cor-cinza-escuro);
+}
+
+#secao-cadastro>p {
+    font-size: var(--tamanho-fonte-md);
+    color: var(--cor-cinza-escuro);
+    text-align: center;
+}
+
+.formulario>p {
+    text-transform: uppercase;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro);
+}
+
+/* === INFORMAÇÕES DO APLICATIVO === */
+.informacao-aplicativo {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro);
+    font-weight: 400;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* === SEÇÃO DE CADASTRO / INSTALAÇÃO === */
+#secao-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: var(--cor-branco);
+    border-radius: var(--borda-arredondamento);
+    border: var(--borda);
+}
+
+#secao-instalacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#secao-instalacao img {
+    width: 133px;
+    height: 39px;
+}
+
+/* === RESPONSIVO (opcional) === */
+@media screen and (max-width: 480px) {
+    .estilo-formulario {
+        padding: 15px;
+    }
+
+    .formulario-botao-azul {
+        font-size: var(--tamanho-fonte-sm);
+    }
+}
