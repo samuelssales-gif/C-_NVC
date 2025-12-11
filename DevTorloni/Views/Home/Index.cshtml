@@ -2,6 +2,12 @@
     ViewData["Title"] = "DevConnect-login";
 }
 <link rel="stylesheet" href="~/css/login.css">
+<script defer>
+const UsuarioNovoCadastrado = "@TempData[key: "UsuarioNovoCadastrado"]";
+if(UsuarioNovoCadastrado == " Nao Cadastrado"){
+    alert("Usuario nao cadastrado! Tente novamente")
+}
+</script>
  <h1>Tela principal login</h1>
     <main>
         <div>
@@ -29,7 +35,7 @@
 
             <!--seção de cadastro-->
             <section id="secao-cadastro" class="estilo-formulario">
-                <p>Não tenho conta. <a href="../pages/cadastro.html">Cadastre-se</a></p>
+                <p>Não tenho conta. <a asp-controller="Usuario" asp-action="">Cadastre-se</a></p>
             </section>
 
             <p class="informacao-aplicativo">Obtenha o aplicativo.</p>
