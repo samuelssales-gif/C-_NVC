@@ -25,17 +25,11 @@ public partial class TbPublicacao
     public DateOnly DataPublicacao { get; set; }
 
     [Column("id_usuario")]
-    public int IdUsuario { get; set; }
-
-    [InverseProperty("IdPublicacaoNavigation")]
-    public virtual ICollection<Comentario> Comentario { get; set; } = new List<Comentario>();
-
-    [InverseProperty("IdPublicacaoNavigation")]
-    public virtual ICollection<Curtida> Curtida { get; set; } = new List<Curtida>();
+    public int? IdUsuario { get; set; }
 
     [ForeignKey("IdUsuario")]
     [InverseProperty("TbPublicacao")]
-    public virtual TbUsuario IdUsuarioNavigation { get; set; } = null!;
+    public virtual TbUsuario? IdUsuarioNavigation { get; set; }
 
     [InverseProperty("IdPublicacaoNavigation")]
     public virtual ICollection<TbComentario> TbComentario { get; set; } = new List<TbComentario>();

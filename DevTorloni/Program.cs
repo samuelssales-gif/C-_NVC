@@ -1,4 +1,4 @@
-using DevTorloni.Context;
+using DevTorloni.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -10,9 +10,6 @@ builder.Services.AddDbContext<DevConnectContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-builder.Services.AddDbContext<DevConnectContext>(Options => Options.UseSqlServer(builder.Configuration.GetConnectionString("DevCon_SA"))
-);
 
 var app = builder.Build();
 

@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace DevTorloni.Models;
 
 [Table("tb_curtida")]
+[Index("IdUsuario", "IdPublicacao", Name = "UQ__tb_curti__F0961F6FF4BC48EE", IsUnique = true)]
 public partial class TbCurtida
 {
     [Key]

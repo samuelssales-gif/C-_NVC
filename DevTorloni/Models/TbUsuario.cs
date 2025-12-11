@@ -36,15 +36,6 @@ public partial class TbUsuario
     public string? FotoPerfilUrl { get; set; }
 
     [InverseProperty("IdUsuarioNavigation")]
-    public virtual ICollection<Comentario> Comentario { get; set; } = new List<Comentario>();
-
-    [InverseProperty("IdUsuarioNavigation")]
-    public virtual ICollection<Curtida> Curtida { get; set; } = new List<Curtida>();
-
-    [InverseProperty("IdUsuarioNavigation")]
-    public virtual ICollection<Publicacao> Publicacao { get; set; } = new List<Publicacao>();
-
-    [InverseProperty("IdUsuarioNavigation")]
     public virtual ICollection<TbComentario> TbComentario { get; set; } = new List<TbComentario>();
 
     [InverseProperty("IdUsuarioNavigation")]
@@ -57,15 +48,7 @@ public partial class TbUsuario
     [InverseProperty("IdUsuarioSeguidor")]
     public virtual ICollection<TbUsuario> IdSeguindo { get; set; } = new List<TbUsuario>();
 
-    [ForeignKey("IdUsuarioSeguir")]
-    [InverseProperty("IdUsuarioSeguir")]
-    public virtual ICollection<TbUsuario> IdUsuarioSeguida { get; set; } = new List<TbUsuario>();
-
     [ForeignKey("IdSeguindo")]
     [InverseProperty("IdSeguindo")]
     public virtual ICollection<TbUsuario> IdUsuarioSeguidor { get; set; } = new List<TbUsuario>();
-
-    [ForeignKey("IdUsuarioSeguida")]
-    [InverseProperty("IdUsuarioSeguida")]
-    public virtual ICollection<TbUsuario> IdUsuarioSeguir { get; set; } = new List<TbUsuario>();
 }
